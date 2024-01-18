@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+ .landing-header {
+    position: fixed;
+    top: 0px;
+    background-image: url(banner-background.png);
+    height: 325px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}  
+
+.grow-main {
+    animation-name: grow-main;
+    animation-duration: 2s; 
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  
+}
+
+.shrunk-header {
+    animation-name: shrink-header;
+    animation-duration: 1s; 
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+
+}
+
+.shrunk-logo {
+    animation-name: shrink-logo;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow-main {
+    from {
+        margin-top: 325px;
+    }
+    to {
+        margin-top: 125px;
+    }
+}
+
+@keyframes shrink-header {
+    from {
+        height: 325px;
+    }
+    to {
+        height: 125px;
+    }
+}
+
+@keyframes shrink-logo {
+    from {
+        width: 375px;
+    }
+    to {
+        width: 125px;
+    }
+}
+
+
+.cart-button {
+    background-color:#E2730D;
+    height: 40px;
+    width: 40px;
+    padding: 5px; 
+    right: 10px;
+    position: absolute;   
+}
+
+.cart-button:hover {
+    cursor: pointer;
+}
+
+.logo {
+    max-width: 375px;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ ul li {
+    background-color:#E2730D;
+}
+
+ .landing-nav {
+    width: 100%;   
+}
+
+.landing-nav ul { 
+    list-style: none;
+    display: flex;
+}
+
+.landing-nav a {
+    color: #4A1E04;   
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    font-family: archivo-black, sans-serif;
+    padding: 10px;    
+}
+
+.landing-nav a:hover {
+    text-shadow: none;
+    cursor: pointer; 
+    color: aliceblue;  
+}
+
+ .nav-right { 
+    position: absolute;   
+    right: 70px;
+    top: 15px; 
+}
+
+.nav-left {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.nav-style {
+    background-color:#E2730D;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px; 
+}
+
+ .landing-main {
+    background: #984900;
+    height: 2000px;
+    margin-top: 325px;
+}
+
